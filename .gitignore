@@ -1,2 +1,5 @@
 .meteor/local
 .meteor/meteorite
+.idea/
+node_modules
+packages/npm-container/

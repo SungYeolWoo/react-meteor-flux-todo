@@ -1,0 +1,9 @@
+{
+  "externalify": "0.1.0",
+  "react": "0.14.0",
+  "react-dom": "0.14.0",
+  "redux": "1.0.0",
+  "react-redux": "0.8.2",
+  "react-router": "1.0.0-rc3",
+  "redux-thunk": "0.1.0"
+}
