@@ -6,6 +6,13 @@ TodosAction = {
     // dispatch data
     TodosCommiter.insertTodo(data);
   },
+
+  removeTodo(data) {
+    console.log('data', data);
+
+    TodosCommiter.removeTodo(data);
+  },
+
 };
 
 //

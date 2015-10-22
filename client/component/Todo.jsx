@@ -4,6 +4,17 @@
 
 Todo = React.createClass({
 
+  handleClick(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    let data = {
+      _id: this.props.todo._id
+    };
+
+    TodosAction.removeTodo(data);
+  },
+
   render() {
     let { text } = this.props.todo || "";
     return (
