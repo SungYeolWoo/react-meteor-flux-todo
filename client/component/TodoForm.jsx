@@ -17,6 +17,7 @@ TodoForm = React.createClass({
     TodosAction.insertTodo(data);
     textElement.value = "";
   },
+
   render() {
     return (
       <form onSubmit={this.onSubmit}>

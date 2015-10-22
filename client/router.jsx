@@ -3,16 +3,13 @@
  */
 
 Meteor.startup(function () {
-const { Router, Route, Redirect } = ReactRouter;
+const { Router, Route } = ReactRouter;
 
   let history = createBrowserHistory();
 
-  console.log('React', React);
   ReactDOM.render((
     <Router history={history}>
-      <Route path='/' component={AppBody}>
-        <Route path='/todos' component={TodosList} />
-      </Route>
+      <Route path='/' component={TodoContainer} />
     </Router>
-  ), document.getElementById('app-container')); //document.getElementById('#container'));
+  ), document.getElementById('app-container'));
 });

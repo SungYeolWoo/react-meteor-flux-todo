@@ -3,12 +3,7 @@
  */
 
 TodosList = React.createClass({
-  PropTypes: {
-    todos: React.PropTypes.array.isRequired
-  },
-  componentDidMount() {
-    //store.dispatch(Actions.fetchTodos());
-  },
+
   render() {
     return (
       <div>
@@ -23,7 +18,6 @@ TodosList = React.createClass({
                       <Todo key={ todo._id }
                             todo = { todo } />
                     );
-
                   })
                 }
               </ul>
@@ -34,11 +28,3 @@ TodosList = React.createClass({
     )
   }
 });
-
-//function mapStateToProps(state) {
-//  return {
-//    todos: state
-//  }
-//}
-
-//this.TodosList = connect(mapStateToProps)(TodosList);

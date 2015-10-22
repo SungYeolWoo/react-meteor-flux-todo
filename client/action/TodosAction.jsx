@@ -1,4 +1,5 @@
 
+// 행동을 정의한 객체
 TodosAction = {
   insertTodo(data) {
     console.log('data', data);

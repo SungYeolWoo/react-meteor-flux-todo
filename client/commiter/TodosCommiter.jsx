@@ -2,10 +2,14 @@
  * Created by 성열우 on 2015. 10. 22..
  */
 
+// 실제 행동하는 객체
 TodosCommiter = {
   insertTodo(data) {
 
+    // load show
     Meteor.call('Todo.insert', data, this._serverError);
+
+    // load remove
     console.log('입력값을 Store 저장', data);
   },
 

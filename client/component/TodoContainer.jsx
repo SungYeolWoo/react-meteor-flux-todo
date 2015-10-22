@@ -2,7 +2,7 @@
  * Created by 성열우 on 15. 10. 20..
  */
 
-AppBody = React.createClass({
+TodoContainer = React.createClass({
   mixins: [ReactMeteorData],
 
   getMeteorData() {
@@ -10,16 +10,16 @@ AppBody = React.createClass({
     let handle = Meteor.subscribe('todosList');
 
     return {
+      loading: ! handle.ready(),
       todos: Todos.find().fetch()
     }
   },
 
-  handleClick() {
-    //var todoId = this.props.todo._id;
-    //store.dispatch(Actions.removeIfRemoved(todoId));
-  },
-
   render() {
+
+    if (this.data.loading) {
+      return <AppLoading />
+    }
 
     return (
       <div>
