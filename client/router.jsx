@@ -11,7 +11,7 @@ const { Router, Route, Redirect } = ReactRouter;
   ReactDOM.render((
     <Router history={history}>
       <Route path='/' component={AppBody}>
-        <Route path='/todos' component={Todos} />
+        <Route path='/todos' component={TodosList} />
       </Route>
     </Router>
   ), document.getElementById('app-container')); //document.getElementById('#container'));
