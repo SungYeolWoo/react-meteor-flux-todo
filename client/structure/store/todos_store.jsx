@@ -11,3 +11,4 @@ Store.Todos = {
     return Todos.findOne(query, options)
   },
 }
+

@@ -5,11 +5,13 @@
 Meteor.startup(function () {
 const { Router, Route } = ReactRouter;
 
-  let history = createBrowserHistory();
+  const browserHistory = ReactRouter.history
+    .useQueries(ReactRouter.history.createHistory)();
 
-  ReactDOM.render((
-    <Router history={history}>
-      <Route path='/' component={TodoContainer} />
+  React.render((
+    <Router history={browserHistory}>
+      <Route path='/' component={Home} />
+      <Route path='/signup' component={Appjs.SignUp} />
     </Router>
   ), document.getElementById('app-container'));
 });

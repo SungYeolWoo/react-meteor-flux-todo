@@ -10,13 +10,13 @@ Meteor.methods({
   'Todo.insert'(data) {
 
     Todos.insert(data);
+    console.log('[Todo.insert] ', data);
   },
 
   'Todo.remove'(data) {
 
-    console.log('data', data);
-
     Todos.remove(data);
+    console.log('[Todo.remove] ', data);
   }
 
 });

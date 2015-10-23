@@ -34,6 +34,7 @@ id-map@1.0.4
 jquery@1.11.4
 jsx@0.2.1
 launch-screen@1.0.4
+less@2.5.0_3
 livedata@1.0.15
 logging@1.0.8
 meteor@1.1.9
@@ -52,7 +53,11 @@ observe-sequence@1.0.7
 ordered-dict@1.0.4
 promise@0.5.0
 random@1.0.4
+react@0.1.14
 react-meteor-data@0.1.9
+react-runtime@0.14.0
+react-runtime-dev@0.14.0
+react-runtime-prod@0.14.0
 reactive-dict@1.1.2
 reactive-var@1.0.6
 reload@1.1.4
@@ -60,6 +65,9 @@ retry@1.0.4
 reywood:bootstrap3-sass@3.3.5_2
 routepolicy@1.0.6
 session@1.1.1
+shinejs:accounts-ui-react@1.1.8
+shinejs:bootstrap-less@1.2.1
+shinejs:react-router@0.14.0
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 standard-minifiers@1.0.1

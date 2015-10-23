@@ -3,16 +3,14 @@
 Action.Todos = {
 
   insert(data) {
-    console.log('data', data);
-
+    console.log('[Action.Todos.insert]', data);
     // dispatch data
     Commiter.Todos.insert(data);
   },
 
-  remove(data) {
-    console.log('data', data);
-
-    Commiter.Todos.remove(data);
+  remove(id) {
+    console.log('[Action.Todos.remove]', id);
+    Commiter.Todos.remove(id);
   },
 
 };

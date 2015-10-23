@@ -19,9 +19,16 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 meteorhacks:npm
 cosmos:browserify
 
-
-npm-container
 jsx
+react-meteor-data
 reywood:bootstrap3-sass
 fourseven:scss
-react-meteor-data
+
+
+shinejs:bootstrap-less
+react
+
+
+npm-container
+shinejs:react-router
+shinejs:accounts-ui-react
