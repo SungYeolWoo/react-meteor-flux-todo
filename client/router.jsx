@@ -9,7 +9,9 @@ const { Router, Route } = ReactRouter;
 
   ReactDOM.render((
     <Router history={history}>
-      <Route path='/' component={TodoContainer} />
+      <Route path='/' component={TodoContainer} >
+        <Route path='signup' component={SignUp} />
+      </Route>
     </Router>
   ), document.getElementById('app-container'));
 });

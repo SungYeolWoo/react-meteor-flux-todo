@@ -25,3 +25,4 @@ jsx
 reywood:bootstrap3-sass
 fourseven:scss
 react-meteor-data
+shinejs:accounts-ui-react
