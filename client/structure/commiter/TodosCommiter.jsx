@@ -3,8 +3,8 @@
  */
 
 // 실제 행동하는 객체
-TodosCommiter = {
-  insertTodo(data) {
+Commiter.Todos = {
+  insert(data) {
 
     // load show
     Meteor.call('Todo.insert', data, this._serverError);
@@ -13,7 +13,7 @@ TodosCommiter = {
     console.log('입력값을 Store 저장', data);
   },
 
-  removeTodo(data) {
+  remove(data) {
 
     Meteor.call('Todo.remove', data, this._serverError);
     console.log('입력값을 Store에서 삭제', data);

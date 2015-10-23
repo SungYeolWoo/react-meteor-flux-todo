@@ -7,11 +7,14 @@ TodoContainer = React.createClass({
 
   getMeteorData() {
 
-    let handle = Meteor.subscribe('todosList');
+    let query = {};
+    let options = {};
+
+    const handle = Meteor.subscribe('todosList', query, options);
 
     return {
       loading: ! handle.ready(),
-      todos: Todos.find().fetch()
+      todos: Store.Todos.find(query, options),
     }
   },
 

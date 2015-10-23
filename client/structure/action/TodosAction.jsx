@@ -1,17 +1,18 @@
 
 // 행동을 정의한 객체
-TodosAction = {
-  insertTodo(data) {
+Action.Todos = {
+
+  insert(data) {
     console.log('data', data);
 
     // dispatch data
-    TodosCommiter.insertTodo(data);
+    Commiter.Todos.insert(data);
   },
 
-  removeTodo(data) {
+  remove(data) {
     console.log('data', data);
 
-    TodosCommiter.removeTodo(data);
+    Commiter.Todos.remove(data);
   },
 
 };

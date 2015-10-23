@@ -14,7 +14,7 @@ TodoForm = React.createClass({
       text: textElement.value
     };
 
-    TodosAction.insertTodo(data);
+    Action.Todos.insert(data);
     textElement.value = "";
   },
 

@@ -12,7 +12,7 @@ Todo = React.createClass({
       _id: this.props.todo._id
     };
 
-    TodosAction.removeTodo(data);
+    Action.Todos.remove(data);
   },
 
   render() {
